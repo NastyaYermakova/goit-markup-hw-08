@@ -1,0 +1,34 @@
+.benefits-section {
+  padding-top: 94px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-list__title {
+  line-height: 1.14;
+  color: $secondary-text-color;
+
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.benefits-list__text {
+  line-height: 1.71;
+}
+
+.benefits-list__item {
+  width: 270px;
+}
+
+.benefits-list__background-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: $bgd-team-color;
+
+  margin-bottom: 30px;
+}

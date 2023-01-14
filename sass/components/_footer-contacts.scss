@@ -1,0 +1,22 @@
+.footer-contacts__adress {
+  line-height: 1.71;
+  color: $bgd-color;
+
+  margin-bottom: 9px;
+}
+
+.footer-contacts-list__link {
+  line-height: 1.71;
+  color: $footer-contacts-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-contacts-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
