@@ -19,48 +19,85 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container header__container">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo">
-            <span class="logo__accent">Web</span>Studio</a
+        <a href="./index.html" class="logo">
+          <span class="logo__accent">Web</span>Studio</a
+        >
+        <button type="button" class="menu-button js-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-menu js-menu-container">
+          <button
+            type="button"
+            class="menu-button menu-button-close js-close-menu"
           >
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="header__link nav__link current" href="./index.html"
-                >Студія</a
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="header__link nav__link current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link nav__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__link contacts__link"
+              >
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="nav__item">
-              <a class="header__link nav__link" href="./portfolio.html"
-                >Портфоліо</a
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="header__link contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
-            </li>
-            <li class="nav__item">
-              <a class="header__link nav__link" href="">Контакти</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="contacts">
-          <li>
-            <a
-              href="mailto:info@devstudio.com"
-              class="header__link contacts__link"
-            >
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="header__link contacts__link">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="header-social">
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -533,5 +570,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
