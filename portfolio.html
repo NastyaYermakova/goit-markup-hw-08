@@ -19,6 +19,89 @@
     <!-- шапка -->
     <header class="header">
       <div class="container header__container">
+        <a href="./index.html" class="logo">
+          <span class="logo__accent">Web</span>Studio</a
+        >
+        <button type="button" class="menu-button js-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-menu js-menu-container">
+          <button
+            type="button"
+            class="menu-button menu-button-close js-close-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="header__link nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a
+                  class="header__link nav__link current"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="header__link nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__link contacts__link"
+              >
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="header__link contacts__link">
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="header-social">
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="#" aria-label="Linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="header">
+      <div class="container header__container">
         <nav class="header-nav">
           <a class="logo" href="./index.html">
             <span class="logo__accent">Web</span>Studio</a
@@ -60,7 +143,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-- main -->
     <main class="main">
       <section class="section section-project">
@@ -92,13 +175,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo1.jpg"
-                    alt="Фото команди вебсайту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-1.jpg    1x,
+                        ./images/mobile-image/mobile-project-1@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-1.jpg    1x,
+                        ./images/tablet-image/tablet-project-1@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-1.jpg    1x,
+                        ./images/desktop-image/desktop-project-1@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-1.jpg"
+                      alt="Фото команди вебсайту"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -117,13 +224,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo2.jpg"
-                    alt="Два баскетболіста у стрибку з м'ячем"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-2.jpg    1x,
+                        ./images/mobile-image/mobile-project-2@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-2.jpg    1x,
+                        ./images/tablet-image/tablet-project-2@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-2.jpg    1x,
+                        ./images/desktop-image/desktop-project-2@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-2.jpg"
+                      alt="Два баскетболіста у стрибку з м'ячем"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -144,13 +275,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo3.jpg"
-                    alt="Логотип риби та назва ресторану "
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-3.jpg 1x,
+                        ./images/mobile-image/mobile-project-3.jpg
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-3.jpg 1x,
+                        ./images/tablet-image/tablet-project-3.jpg
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-3.jpg 1x,
+                        ./images/desktop-image/desktop-project-3.jpg
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-3.jpg"
+                      alt="Логотип риби та назва ресторану "
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -169,13 +324,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo4.jpg"
-                    alt="Навушники "
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-4.jpg    1x,
+                        ./images/mobile-image/mobile-project-4@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-4.jpg    1x,
+                        ./images/tablet-image/tablet-project-4@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-4.jpg    1x,
+                        ./images/desktop-image/desktop-project-4@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-4.jpg"
+                      alt="Навушники "
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -194,13 +373,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo5.jpg"
-                    alt="Коричнева та біла коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-5.jpg    1x,
+                        ./images/mobile-image/mobile-project-5@x2.jpg 2x
+                      "
+                      media="(max-width: 767px"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-5.jpg    1x,
+                        ./images/tablet-image/tablet-project-5@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-5.jpg    1x,
+                        ./images/desktop-image/desktop-project-5@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-5.jpg"
+                      alt="Коричнева та біла коробки"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -220,13 +423,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo6.jpg"
-                    alt="Екран монітора з вебсайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-6.jpg    1x,
+                        ./images/mobile-image/mobile-project-6@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-6.jpg    1x,
+                        ./images/tablet-image/tablet-project-6@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-6.jpg    1x,
+                        ./images/desktop-image/desktop-project-6@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-6.jpg"
+                      alt="Екран монітора з вебсайтом"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -248,13 +475,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo7.jpg"
-                    alt="Розгорнутий журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-7.jpg    1x,
+                        ./images/mobile-image/mobile-project-7@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-7.jpg    1x,
+                        ./images/tablet-image/tablet-project-7@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-7.jpg    1x,
+                        ./images/desktop-image/desktop-project-7@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-7.jpg"
+                      alt="Розгорнутий журнал"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -273,13 +524,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo8.jpg"
-                    alt="Ярлик"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-8.jpg    1x,
+                        ./images/mobile-image/mobile-project-8@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-8.jpg    1x,
+                        ./images/tablet-image/tablet-project-8@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-8.jpg    1x,
+                        ./images/desktop-image/desktop-project-8@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-8.jpg"
+                      alt="Ярлик"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -298,13 +573,37 @@
             <li class="project-list__list">
               <a href="">
                 <div class="project-overlay">
-                  <img
-                    class="project-overlay__img"
-                    src="./images/portfolio-photo9.jpg"
-                    alt="Монітор ноутбука, де відображений додаток"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/mobile-image/mobile-project-9.jpg    1x,
+                        ./images/mobile-image/mobile-project-9@x2.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-image/tablet-project-9.jpg    1x,
+                        ./images/tablet-image/tablet-project-9@x2.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/desktop-image/desktop-project-9.jpg    1x,
+                        ./images/desktop-image/desktop-project-9@x2.jpg 2x
+                      "
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="project-overlay__img"
+                      src="./images/mobile-image/mobile-project-9.jpg"
+                      alt="Монітор ноутбука, де відображений додаток"
+                    />
+                  </picture>
+
                   <div class="project-overlay__text-overlay">
                     <p class="project-overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
