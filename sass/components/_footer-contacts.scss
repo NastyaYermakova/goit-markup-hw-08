@@ -1,11 +1,28 @@
+.footer-contacts {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+    margin-right: 70px;
+  }
+}
+
 .footer-contacts__adress {
+  font-style: normal;
   line-height: 1.71;
   color: $bgd-color;
 
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts-list__link {
+  font-style: normal;
   line-height: 1.71;
   color: $footer-contacts-color;
 
@@ -18,5 +35,9 @@
 }
 
 .footer-contacts-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }

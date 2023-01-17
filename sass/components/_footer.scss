@@ -1,18 +1,23 @@
 .footer {
   background-color: $secondary-bgd-color;
   padding: 60px 0;
+
+  @media screen and (max-width: $max-tablet) {
+    text-align: center;
+  }
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
-}
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 
-.footer-contacts {
-  width: 231px;
-  margin-right: 70px;
-}
-
-.footer__address {
-  font-style: normal;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }

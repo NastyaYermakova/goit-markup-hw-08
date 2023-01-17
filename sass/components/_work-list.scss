@@ -1,3 +1,10 @@
+.section-work {
+  @media screen and (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop) {
 .work-list {
   display: flex;
   justify-content: space-between;
@@ -5,6 +12,10 @@
 
 .work-list__item {
   position: relative;
+}
+
+.work-list__img {
+  display: block;
 }
 
 .work-list__title {
@@ -20,4 +31,5 @@
 
   background-color: rgba(47, 48, 58, 0.8);
   color: $bgd-color;
+}
 }
