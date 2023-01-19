@@ -24,7 +24,7 @@
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
   transform: translateX(-50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,10 +37,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 40px;
+  // padding-top: 40px;
+  // padding-bottom: 40px;
+  // padding-left: 41px;
+  // padding-right: 39px;
 
   @media screen and (min-width: $desktop) {
     transform: translate(-50%, -50%) scale(1);

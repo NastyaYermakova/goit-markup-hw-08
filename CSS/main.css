@@ -243,6 +243,11 @@ p {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link {
+    font-size: 12px;
+  }
+}
 
 .contacts__icon {
   margin-right: 10px;
@@ -700,12 +705,19 @@ p {
   }
 }
 
-.lient-list__item {
+.client-section__icon {
+  fill: #afb1b8;
+}
+.client-section__icon:hover, .client-section__icon:focus {
+  fill: #2196f3;
+}
+
+.client-list__item {
   width: calc(50% - 15px);
   height: 92px;
 }
 @media screen and (min-width: 768px) {
-  .lient-list__item {
+  .client-list__item {
     width: calc((100% - 60px) / 3);
   }
 }
@@ -987,7 +999,7 @@ p {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(1);
           transform: translateX(-50%) scale(1);
@@ -1002,10 +1014,7 @@ p {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 40px;
 }
 @media screen and (min-width: 1200px) {
   .modal {

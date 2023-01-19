@@ -16,7 +16,15 @@
   }
 }
 
-.lient-list__item {
+.client-section__icon {
+  fill: $icon-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.client-list__item {
   width: calc((100%) / 2 - 15px);
   height: 92px;
 
